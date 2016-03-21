@@ -7,21 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "ReassignedPropertyCrash.h"
+#import "DeallocCrash.h"
 
 @interface ViewController ()
-
+@property(nonatomic, strong)ReassignedPropertyCrash *crash;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+-(IBAction)reassignedPropertyButtonPressed{
+    self.crash = [[ReassignedPropertyCrash alloc] init];
+    [self.crash crash];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(IBAction)deallocButtonPressed{
+    DeallocCrash *deallocCrash = [[DeallocCrash alloc] init];
+    [deallocCrash crash];
 }
+
 
 @end

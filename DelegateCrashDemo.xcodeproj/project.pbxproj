@@ -13,6 +13,10 @@
 		FB3EF6C41C9C12CB0051AD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3EF6C21C9C12CB0051AD1D /* Main.storyboard */; };
 		FB3EF6C61C9C12CB0051AD1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3EF6C51C9C12CB0051AD1D /* Assets.xcassets */; };
 		FB3EF6C91C9C12CB0051AD1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3EF6C71C9C12CB0051AD1D /* LaunchScreen.storyboard */; };
+		FB3EF6D21C9C18FF0051AD1D /* Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3EF6D11C9C18FF0051AD1D /* Crash.m */; };
+		FB3EF6D81C9C1A460051AD1D /* ReassignedPropertyCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3EF6D71C9C1A460051AD1D /* ReassignedPropertyCrash.m */; };
+		FB3EF6DB1C9C1AF10051AD1D /* Callback.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3EF6DA1C9C1AF10051AD1D /* Callback.m */; };
+		FB3EF6DE1C9F9CA20051AD1D /* DeallocCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3EF6DD1C9F9CA20051AD1D /* DeallocCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		FB3EF6C51C9C12CB0051AD1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3EF6C81C9C12CB0051AD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3EF6CA1C9C12CB0051AD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3EF6D01C9C18FF0051AD1D /* Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crash.h; sourceTree = "<group>"; };
+		FB3EF6D11C9C18FF0051AD1D /* Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crash.m; sourceTree = "<group>"; };
+		FB3EF6D61C9C1A460051AD1D /* ReassignedPropertyCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReassignedPropertyCrash.h; sourceTree = "<group>"; };
+		FB3EF6D71C9C1A460051AD1D /* ReassignedPropertyCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReassignedPropertyCrash.m; sourceTree = "<group>"; };
+		FB3EF6D91C9C1AF10051AD1D /* Callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callback.h; sourceTree = "<group>"; };
+		FB3EF6DA1C9C1AF10051AD1D /* Callback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callback.m; sourceTree = "<group>"; };
+		FB3EF6DC1C9F9CA20051AD1D /* DeallocCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeallocCrash.h; sourceTree = "<group>"; };
+		FB3EF6DD1C9F9CA20051AD1D /* DeallocCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeallocCrash.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,14 @@
 				FB3EF6C71C9C12CB0051AD1D /* LaunchScreen.storyboard */,
 				FB3EF6CA1C9C12CB0051AD1D /* Info.plist */,
 				FB3EF6B91C9C12CB0051AD1D /* Supporting Files */,
+				FB3EF6D01C9C18FF0051AD1D /* Crash.h */,
+				FB3EF6D11C9C18FF0051AD1D /* Crash.m */,
+				FB3EF6D61C9C1A460051AD1D /* ReassignedPropertyCrash.h */,
+				FB3EF6D71C9C1A460051AD1D /* ReassignedPropertyCrash.m */,
+				FB3EF6DC1C9F9CA20051AD1D /* DeallocCrash.h */,
+				FB3EF6DD1C9F9CA20051AD1D /* DeallocCrash.m */,
+				FB3EF6D91C9C1AF10051AD1D /* Callback.h */,
+				FB3EF6DA1C9C1AF10051AD1D /* Callback.m */,
 			);
 			path = DelegateCrashDemo;
 			sourceTree = "<group>";
@@ -149,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3EF6DB1C9C1AF10051AD1D /* Callback.m in Sources */,
 				FB3EF6C11C9C12CB0051AD1D /* ViewController.m in Sources */,
+				FB3EF6D81C9C1A460051AD1D /* ReassignedPropertyCrash.m in Sources */,
 				FB3EF6BE1C9C12CB0051AD1D /* AppDelegate.m in Sources */,
+				FB3EF6DE1C9F9CA20051AD1D /* DeallocCrash.m in Sources */,
 				FB3EF6BB1C9C12CB0051AD1D /* main.m in Sources */,
+				FB3EF6D21C9C18FF0051AD1D /* Crash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = DelegateCrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shine.DelegateCrashDemo;
@@ -272,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = DelegateCrashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shine.DelegateCrashDemo;
@@ -298,6 +324,7 @@
 				FB3EF6CF1C9C12CB0051AD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
